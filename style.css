@@ -6,8 +6,6 @@ body {
 nav {
     display: flex;
     overflow: hidden;
-    position: fixed; /* Set the navbar to fixed position */
-    z-index: 2;
     padding-left: 11%;
 }
 /* NAV */
@@ -62,5 +60,85 @@ nav>a {
     width: calc(100% + 1.3px);
     height: 110px;
 }
+/*  ABOUT-ME */
+.bg-about {
+    position: relative;
+    padding-right: 10%;
+    padding-left: 10%;
+}
+.about-me {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: honeydew solid 10px;
+    border-radius: 20px;
+    padding: 4%;
+}
+.about-image img {
+    height: 400px;
+}
+.about-content {
+    width: 50%;
+    padding: 3%;
+}
+.about-content h2 {
+    font-size: 3rem;
+    font-weight: 900;
+}
+.about-content p {
+    font-size: 20px;
+    font-weight: 200;
+    width: 100%;
+    text-align: justify;
+}
+/*  SKILLS */
+.bg-skills {
+    position: relative;
+    padding-right: 10%;
+    padding-left: 10%;
+    padding-top: 5%;
+    background-color: #045de9;
+    background-image: linear-gradient(315deg, #00c3ff 0%, #ffff1c 80%);
+}
+.skills-svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+.skills-image img {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 150px;
+}
+
+.skills-content {
+    margin-top: 10%;
+    box-sizing: border-box;
+    display: inline-block
+}
+
+.container {
+  width: 25%;
+  background-color: #ddd;
+}
+
+.skills {
+  text-align: right;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: white;
+}
+
+.html {width: 90%; background-color: #4CAF50;}
+.css {width: 80%; background-color: #2196F3;}
+.git {width: 65%; background-color: #f44336;}
+.github {width: 60%; background-color: #808080;}
+.markdown {width: 60%; background-color: #808080;}
+.bash {width: 60%; background-color: #808080;}
+
 
 
