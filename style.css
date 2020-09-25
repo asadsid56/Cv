@@ -1,0 +1,66 @@
+
+body {
+    margin: 0;
+    padding: 0; 
+}
+nav {
+    display: flex;
+    overflow: hidden;
+    position: fixed; /* Set the navbar to fixed position */
+    z-index: 2;
+    padding-left: 11%;
+}
+/* NAV */
+nav>a {
+    text-decoration: none;
+    font-size: 30px;
+    padding: 30px;
+    color: black;
+}
+/* HEADER */
+.bg-header {
+    background-color: #045de9;
+    background-image: linear-gradient(315deg, #00c3ff 0%, #ffff1c 80%);
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+    padding-right: 10%;
+    padding-left: 10%;
+}
+.header-content {
+    width: 50%;
+    padding: 3%;
+}
+.header-content h1 {
+    font-size: 3rem;
+    font-weight: 900;
+}
+.header-content p {
+    font-size: 20px;
+    font-weight: 200;
+    width: 80%;
+    text-align: justify;
+}
+.landscape img {
+    height: 500px;
+}
+.book-svg {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.book-svg img {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 110px;
+}
+
+
