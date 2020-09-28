@@ -15,6 +15,10 @@ nav>a {
     padding: 30px;
     color: black;
 }
+nav>a:hover {
+    background-color: aquamarine;
+    opacity: 0.7;
+}
 /* HEADER */
 .bg-header {
     background-color: #045de9;
@@ -70,9 +74,9 @@ nav>a {
     display: flex;
     align-items: center;
     justify-content: center;
-    border: honeydew solid 10px;
+    border: aquamarine solid 10px;
     border-radius: 20px;
-    padding: 4%;
+    padding: 10%;
 }
 .about-image img {
     height: 400px;
@@ -161,9 +165,11 @@ nav>a {
     height: 280px;
     transition: ease-in-out 8s;
     background-position:  top;
+    border-radius: 20px;
 }
 .work-container .box:hover {
     background-position: bottom;
+    opacity: 0.7;
 }
 .work-container .box.box1 {
     background-image: url('./img/website.png');
@@ -211,7 +217,9 @@ nav>a {
     grid-template-columns: auto auto auto; 
     justify-items: center;
     align-items: center;
-    border: honeydew solid 10px;
+    border: aquamarine solid 10px;
+    border-radius: 20px;
+    padding: 10%;
     
 }
 .approch-container .approch {
@@ -221,10 +229,183 @@ nav>a {
 .approch img {
     width: 300px;
     height: 200px;
+    background-color: azure;
+    padding: 20px;
+    border-radius: 20px;
 }
 
 .approch h3 {
     text-align: center;
     margin: 0;  
 }
+/* CONTACT */
+.bg-contact {
+    padding-left: 10%;
+    padding-right: 10%;
+}
+.bg-contact h2 {
+    font-size: 3rem;
+    font-weight: 900;
+    text-align: center ;
+}
+input[type=text], textarea {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid aquamarine;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+  
+  input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  input[type=submit]:hover {
+    background-color: aquamarine;
+    opacity: 0.7;
+  }
+  
+  .container-contact {
+    border-radius: 20px;
+    background-color: honeydew;
+    padding: 10%;
+    border: 10px solid aquamarine;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  /* FOOTER */
+  /* FOOTER */
+/* START OF SOCIAL MEDIA */
+.bg-footer {
+    background-color: #045de9;
+    background-image: linear-gradient(315deg, #00c3ff 0%, #ffff1c 80%);
+    position: relative;
+    padding-top: 10%;  
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.map {
+    padding-top: 5%;
+    padding-bottom: 5%; 
+}
+.links {
+display: inline-grid;
+padding-right: 190px;
+padding-top: 5%;
+padding-bottom: 5%;
+}
+.links a {
+    font-size: 2rem;
+    text-align: center;
+    text-decoration: none;
+    color: blue;
+}
 
+.icons {
+    padding-right: 20px;
+    padding-top: 5%;
+    padding-bottom: 5%; 
+}
+.icons h4 {
+    font-size: 3rem; 
+    font-weight: 900;
+    color: black;
+}
+/* Style all font awesome icons */
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+    opacity: 0.7;
+}
+
+/* Set a specific color for each brand */
+
+/* Facebook */
+.fa-facebook {
+    background: blue;
+    color: white;
+    border-radius: 20%;
+}
+
+/* Twitter */
+.fa-twitter {
+    background: red;
+    color: white;
+    border-radius: 20%;
+}
+
+/* Linkedin */
+.fa-instagram {
+    background: yellow; 
+    color: white;
+    border-radius: 20%;
+}
+/* END OF SOCIAL MEDIA */
+
+
+/*------------------------------------------------ MEDIA QUERY ---------------------------------------------------------- */
+
+/* On screens that are 992px or less, set the background color to blue */
+@media screen and (max-width: 1236px) {
+    body {
+        width: 100%;
+    }
+    
+    .bg-header {
+        width: 100%;
+        padding: 0;
+    }
+    .header-content {
+        width: 30%;
+        height: 300px;
+        padding: 0;
+    }
+    .header-content h1 {
+        margin: 0;
+    }
+    .landscape img {
+        height: 270px;
+    }
+    .book-svg img {
+        height: 50px;
+    }
+    .about-me {
+        padding: 0%;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+    .about-image img {
+        width: 400px;
+        height: 400px;
+    }
+  }
+
+  @media screen and (max-width: 886px) {
+    .bg-header {
+        width: 100%;
+    }
+
+  }
+  
+  /* On screens that are 600px or less, set the background color to olive */
+  @media screen and (max-width: 600px) {
+    
+  }
